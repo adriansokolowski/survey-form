@@ -7,6 +7,24 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <h1 id="title">Survey form</h1>
+    <p id="description">Short explanation</p>
+    <form id="survey-form" action="">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name." required>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email address." required>
+        <label for="number" id="number-label">Number</label>
+        <input id="number" type="number" min="13" max="100" placeholder="Enter number between 13 to 100" required>
+        <select name="dropdown" id="dropdown">
+            <option value="option">Option</option>
+        </select>
+        <input type="radio" name="radio" value="radio">Radio
+        <input type="radio" name="radio" value="radio2">Radio2
+        <input type="checkbox" name="checkbox" value="checkbox">checkbox
+        <input type="checkbox" name="checkbox" value="checkbox2">Checkbox2
+        <textarea name="" id="" rows="3"></textarea>
+        <button id="submit">Send</button>
+    </form>
 </body>
 </html>
