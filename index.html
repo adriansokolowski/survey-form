@@ -5,26 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1 id="title">Survey form</h1>
-    <p id="description">Short explanation</p>
-    <form id="survey-form" action="">
-        <label for="name" id="name-label">Name</label>
-        <input id="name" type="text" placeholder="Enter your name." required>
-        <label for="email" id="email-label">Email</label>
-        <input id="email" type="email" placeholder="Enter your email address." required>
-        <label for="number" id="number-label">Number</label>
-        <input id="number" type="number" min="13" max="100" placeholder="Enter number between 13 to 100" required>
-        <select name="dropdown" id="dropdown">
-            <option value="option">Option</option>
-        </select>
-        <input type="radio" name="radio" value="radio">Radio
-        <input type="radio" name="radio" value="radio2">Radio2
-        <input type="checkbox" name="checkbox" value="checkbox">checkbox
-        <input type="checkbox" name="checkbox" value="checkbox2">Checkbox2
-        <textarea name="" id="" rows="3"></textarea>
-        <button id="submit">Send</button>
-    </form>
+    <div class="wrapper">
+        <h1 id="title">Survey form</h1>
+        <p id="description">Short explanation</p>
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter your name." required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter your email address." required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Number</label>
+                <input id="number" type="number" min="13" max="100" class="form-control" placeholder="Enter number between 13 to 100" required>
+            </div>
+            <div class="form-group">
+            <label for="dropdown">Dropdown label</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="option">Option</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="radio">Radio label</label>
+                <input type="radio" name="radio" value="radio">Radio
+                <input type="radio" name="radio" value="radio2">Radio2
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Checkbox label</label>
+                <input type="checkbox" name="checkbox" value="checkbox">checkbox
+                <input type="checkbox" name="checkbox" value="checkbox2">Checkbox2
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Textarea label</label>
+                <textarea name="textarea" id="textarea"  rows="3"></textarea>
+            </div>
+            <button id="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
