@@ -1,6 +1,6 @@
 # <p align="center">Survey form | freecodecamp task</p>
 
-Check [DEMO](https://adriansokolowski.github.io/survey-form)
+Check [DEMO](https://adriansokolowski.github.io/survey-form/)
 
 ## Stack
 - HTML 
